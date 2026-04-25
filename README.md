@@ -1,8 +1,10 @@
 🎀 Get It, Girl! 🎀
+
 The Accountability Partner That Doesn't Take 'No' For An Answer
 Get It, Girl! is a high-energy productivity application designed to bridge the gap between simple task management and active habit coaching. Built in Java, it leverages strict OOP principles to ensure that your goals are managed with the same rigor you apply to your life.
 
 ✨ Features
+
 Nesting & Hierarchy: Utilize recursive logic to break "Big Goals" down into small steps.
 
 Escalating Accountability: A custom notification engine that increases urgency for overdue tasks as well as a check in feature that allows you to reflect on the incomplete/overdue task.
@@ -12,6 +14,7 @@ State Persistence: Seamlessly saves your progress to local JSON storage so you n
 Vibrant UX: A terminal or GUI-based interface designed with a modern, high-energy aesthetic.
 
 🛠️ Tech Stack
+
 Core: Java 17+ (utilizing Collections API, Generics, and Streams).
 
 Build Tool: Maven (for dependency management and lifecycle control).
@@ -21,6 +24,7 @@ Storage: JSON (via Jackson or Gson) for local data persistence.
 Environment: Pop!_OS / Linux.
 
 🏗️ System Architecture (The "Brain")
+
 This project follows a Model-View-Controller (MVC) pattern to keep the accountability logic separate from the user interface.
 
 Key Components:
@@ -31,6 +35,7 @@ AccountabilityEngine (Controller): The heart of the app. It iterates through the
 JsonStorageManager: Handles the serialization and deserialization of Java Objects into JSON format for persistence.
 
 📂 Project Structure
+
 Plaintext
 src/main/java/com/getitgirl/
 ├── model/
@@ -42,19 +47,7 @@ src/main/java/com/getitgirl/
 ├── App.java                 # Entry point
 └── ui/
     └── ConsoleStyles.java   # Custom ANSI colors for that "Girly Pop" feel
-🚀 Installation
-Clone the repo:
 
-Bash
-git clone https://github.com/wtc/get-it-girl-java.git
-Build with Maven:
-
-Bash
-mvn clean install
-Run the App:
-
-Bash
-java -jar target/get-it-girl-1.0.jar
 💅 Technical Highlights
 Interface-Driven Design: The StorageService is built as an interface, allowing the app to switch from JSON to a SQL database in the future without breaking core logic.
 
